@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 $pink-color: hsl(322, 100%, 66%);
-$VeryPaleCyan-color: hsl(193, 100%, 96%);
-$VeryDar-Cyan: hsl(192, 100%, 9%);
-$Grayish-Blue: hsl(208, 11%, 55%);
+$very-pale-cyan-color: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-Blue: hsl(208, 11%, 55%);
+$family-heading-text: 'Poppins', sans-serif;;
+$family-body-text: 'Open Sans', sans-serif;
+
+@mixin button($very-pale-cyan-color, $very-dark-cyan){
+  border-radius: 1rem;
+  color: $very-dark-cyan;
+  background-color: $very-pale-cyan-color;
+  border: none;
+}
 
 body {
-  color: $pink-color;
+  font-family: $family-body-text;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+
+.button-nav{
+  @include button(white, $very-dark-cyan);
+  height: 2rem;
+  width: 8rem;
+  box-shadow: 2px 2px 8px;
 }
