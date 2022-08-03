@@ -6,3 +6,9 @@ $Grayish-Blue: hsl(208, 11%, 55%);
 body {
   color: $pink-color;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
