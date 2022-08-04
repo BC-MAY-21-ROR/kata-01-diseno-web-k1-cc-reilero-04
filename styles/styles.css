@@ -5,18 +5,87 @@ body {
 }
 
 .nav {
+  padding: 5px;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
+  padding-left: 0px;
+}
+
+.nav ul img {
+  width: 113px;
 }
 
 .button-nav {
   border-radius: 1rem;
-  color: hsl(192deg, 100%, 9%);
+  color: #00252e;
   background-color: white;
   border: none;
   height: 2rem;
   width: 8rem;
-  box-shadow: 2px 2px 8px;
-}/*# sourceMappingURL=styles.css.map */
+  -webkit-box-shadow: 2px 2px 8px;
+          box-shadow: 2px 2px 8px;
+}
+
+.center-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding-left: 0px;
+  width: 375px;
+  background-image: url(../images/bg-hero-mobile.svg);
+}
+
+.center-article li {
+  text-align: center;
+  width: 80%;
+}
+
+.center-article li h1 {
+  color: #00252e;
+}
+
+.center-article li p {
+  color: #00252e;
+}
+
+.button-article {
+  border-radius: 1rem;
+  color: #00252e;
+  background-color: white;
+  border: none;
+  height: 2.5rem;
+  width: 12.5rem;
+  border-radius: 2rem;
+  white-space: normal;
+  background: #ff52bf;
+  color: #ebfbff;
+  margin: 40px 0px 40px 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=styles.css.map */

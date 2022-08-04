@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 $pink-color: hsl(322, 100%, 66%);
 $very-pale-cyan-color: hsl(193, 100%, 96%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $grayish-Blue: hsl(208, 11%, 55%);
-$family-heading-text: 'Poppins', sans-serif;;
-$family-body-text: 'Open Sans', sans-serif;
+$family-heading-text: "Poppins", sans-serif;
+$family-body-text: "Open Sans", sans-serif;
 
-@mixin button($very-pale-cyan-color, $very-dark-cyan){
+@mixin button($very-pale-cyan-color, $very-dark-cyan) {
   border-radius: 1rem;
   color: $very-dark-cyan;
   background-color: $very-pale-cyan-color;
@@ -19,15 +19,60 @@ body {
   font-family: $family-body-text;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  padding: 5px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    img {
+      width: 113px;
+    }
+  }
 }
 
-.button-nav{
+.button-nav {
   @include button(white, $very-dark-cyan);
   height: 2rem;
   width: 8rem;
+
   box-shadow: 2px 2px 8px;
+}
+
+.center-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+  width: 375px;
+
+  background-image: url(../images/bg-hero-mobile.svg);
+  li {
+    text-align: center;
+    width: 80%;
+
+    h1 {
+      color: $very-dark-cyan;
+    }
+    p {
+      color: $very-dark-cyan;
+    }
+  }
+}
+.button-article {
+  @include button(white, $very-dark-cyan);
+  height: 2.5rem;
+  width: 12.5rem;
+  border-radius: 2rem;
+  white-space: normal;
+  background: $pink-color;
+  color: $very-pale-cyan-color;
+  margin: 40px 0px 40px 0px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
