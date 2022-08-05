@@ -58,7 +58,6 @@ body {
 
   background-image: url(../images/bg-hero-mobile.svg);
   background-color: $very-pale-cyan-color;
-  
 
   li {
     text-align: center;
@@ -88,7 +87,7 @@ body {
     }
     p {
       color: $grayish-Blue;
-      font-size: 0.90rem;
+      font-size: 0.9rem;
       width: 120%;
     }
   }
@@ -122,4 +121,40 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.footer-styles {
+  background-color: $very-dark-cyan;
+  color: $very-pale-cyan-color;
+  list-style: none;
+  ul {
+    list-style: none;
+  }
+}
+
+.footter-ul {
+  li {
+    display: flex;
+    flex-direction: row;
+    margin: 17px 0;
+    align-items: baseline;
+    font-size: 0.8rem;
+    img {
+      max-width: none;
+      width: auto;
+      height: 15px;
+      margin-right: 20px;
+    }
+    p {
+      margin: 0px;
+      width: 242px;
+    }
+  }
+}
+.logo-white {
+  width: 190px;
+}
+
+.footter-ul-about {
+  margin-top: 40px;
 }
