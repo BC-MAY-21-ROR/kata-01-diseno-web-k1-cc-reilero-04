@@ -44,6 +44,9 @@ body {
   width: 6.5rem;
 
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  &:hover{
+    opacity: 0.75;
+  }
 }
 
 .center-article {
@@ -116,6 +119,9 @@ body {
   background: $pink-color;
   color: $very-pale-cyan-color;
   margin: 40px 0px 40px 0px;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 img {
@@ -176,14 +182,22 @@ img {
     }
   }
 }
-
 .logo-white {
   height: 25px !important;
 }
 
-.footter-ul-about {
+.f-ul-top{
   margin-top: 40px;
+}
+.footter-ul-about {
   padding-left: 20px;
+  li {
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
 }
 
 .copyright {
@@ -209,9 +223,62 @@ img {
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+    &:hover{
+      border: 1px solid $pink-color;
+      svg {
+        fill: $pink-color;
+      }
+    }
+    cursor: pointer;
   }
-  img {
+  svg {
     width: 20px;
     height: 20px;
+    fill: white;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-styles{
+    
+    div {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .footter-ul {
+    margin-top: 0;
+    li {
+      font-size: small;
+    }
+  }
+  .footter-ul-about {
+    margin-top: 60px;
+  }
+  
+  .logo-white-p{
+    margin-top: 0 !important;
+    margin-bottom: 34px !important;
+  }
+  .brands {
+    margin-top: 3.5rem;
+  }
+  .float {
+    h2{
+      font-size: 1.5rem !important;
+    }
+    button{
+      height: 50px !important;
+      width: 250px !important;
+      font-weight: 600;
+    }
+    top: -120px !important;
+    left: 22.5% !important;
+    width: 55% !important;
+    height: 180px !important;
+  }
+  .copyright {
+    text-align: right;
+    margin-right: 4vw;
   }
 }
